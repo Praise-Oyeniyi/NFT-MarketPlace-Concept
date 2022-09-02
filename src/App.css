@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('http://fonts.cdnfonts.com/css/clash-display');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+    background-image: url('../src/Images/headerApe.png'), url('./Images/bottom.png') ;
+    background-repeat: no-repeat;
+    background-position: bottom right, bottom center;
+    background-size:60% 75%, 100% 40%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h4, h5, h6, p{
+    font-family:'Poppins'
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1, h2, h3{
+    font-family: 'Clash Display', sans-serif;;
 }
-
-.App-link {
-  color: #61dafb;
+.extra{
+    color:transparent;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bd-color{
+    border-color: transparent;
+    /* color:#ffffff26; */
+}
+.outer-border{
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+}
+.gall-box{
+    box-shadow:  4px 5px rgba(0, 7, 72, 0.041);
 }
