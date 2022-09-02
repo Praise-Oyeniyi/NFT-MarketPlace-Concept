@@ -32,7 +32,7 @@ function App() {
     <div>
       {window.innerWidth<1000?(<h3 className='w-screen h-screen flex justify-center items-center text-lg text-center p-4'>Sorry Page Is Unresponsive yet. Check the PAge again On A Bigger Screen</h3>)
       :
-      <div className='bg-dark-bg w-full text-white overflow-x-hidden'>
+      <div className='bg-dark-bg w-full text-white overflow-x-hidden max-w-[1600px] mx-auto'>
         <Header/>
         <Discover/>
           <div className='w-[90%] mx-auto my-24 flex items-center relative'>
