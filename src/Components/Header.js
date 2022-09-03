@@ -14,14 +14,14 @@ const Header = () => {
               </div>
 
               <div className="nav-links w-3/6 flex justify-evenly space-x-5 items-center">
-                <ul className='w-full flex space-x-5 items-center justify-around'>
-                  <li>Marketplace</li>
-                  <li>Collection</li>
-                  <li>Community</li>
-                  <li>Create</li>
+                <ul className='w-full flex space-x-5 items-center justify-around text-base font-medium'>
+                  <li className='link-hover border-y-2 py-2 border-y-transparent hover:border-y-linear-mid'>Marketplace</li>
+                  <li className='link-hover border-y-2 py-2 border-y-transparent hover:border-y-linear-mid'>Collection</li>
+                  <li className='link-hover border-y-2 py-2 border-y-transparent hover:border-y-linear-mid'>Community</li>
+                  <li className='link-hover border-y-2 py-2 border-y-transparent hover:border-y-linear-mid'>Create</li>
                 </ul>
                 
-                <Button Text={'Wallet'} Class={'bg-button px-4'}/>
+                <Button Text={'Wallet'} Class={'bg-button px-5'}/>
               </div>
             </nav>
 
@@ -37,7 +37,7 @@ const Header = () => {
                 <p className='w-4/6 text-base'>
                   The leading NFT Marketplace on Ethereum Home to the next generation of digital creators.
                 </p>
-                <Button Text={'Explore'} Class={'bg-button px-6'}/>
+                <Button Text={'Explore'} Class={'bg-button px-7'}/>
               </section>
               
               <section className='w-3/6 flex justify-between items-center pt-8'>

@@ -9,9 +9,9 @@ import Logo from '../Images/logo.png'
 
 const Footer = () => {
   return (
-    <footer className='w-full text-center space-y-8 bg-[#ffffff13] py-10'>
+    <footer className='w-full text-center space-y-8 bg-[#ffffff13] py-10 z-50 pointer-events-auto box-after relative'>
             
-    <h3 className='text-3xl pb-2'>Get More Updates</h3>
+    <h3 className='text-3xl pb-2 font-medium'>Get More Updates</h3>
 
     <p className='text-base'>
       Join our mailing list to stay in the loop with our newest feature releases, 
@@ -38,7 +38,7 @@ const Footer = () => {
             Home to the next generation of digital creators. Discover the best NFT collections.
           </p>
           <div className="w-5/6 icons flex space-x-5 pt-2">
-            <img src={Discord} alt="social icons" className='h-10 w-10 p-2 border border-lwhite hover:border-button'/>
+            <img src={Instagram} alt="social icons" className='h-10 w-10 p-2 border border-lwhite hover:border-button'/>
             <img src={Twitter} alt="social icons" className='h-10 w-10 p-2 border border-lwhite hover:border-button'/>
             <img src={Facebook} alt="social icons" className='h-10 w-10 p-2 border border-lwhite hover:border-button'/>
             <img src={Discord} alt="social icons" className='h-10 w-10 p-2 border border-lwhite hover:border-button'/>
@@ -49,20 +49,20 @@ const Footer = () => {
         <div className='w-2/6 space-y-5'>
           <h3 className='text-2xl font-medium tracking-wide'>MarketPlace</h3>
           <ul className='footer-links space-y-3 text'>
-            <li className='hover:text-linear-mid'>Explore</li>
-            <li className='hover:text-linear-mid'>Articles</li>
-            <li className='hover:text-linear-mid'>How It Works</li>
-            <li className='hover:text-linear-mid'>Help</li>
+            <li className='link-hover'>Explore</li>
+            <li className='link-hover'>Articles</li>
+            <li className='link-hover'>How It Works</li>
+            <li className='link-hover'>Help</li>
           </ul>
         </div>
 
         <div className='w-2/6 space-y-5'>
           <h3 className='text-2xl font-medium tracking-wide'>Links</h3>
           <ul className='footer-links space-y-3 text-lg'>
-            <li className='hover:text-linear-mid'>Tokens</li>
-            <li className='hover:text-linear-mid'>API</li>
-            <li className='hover:text-linear-mid'>Big Bounty</li>
-            <li className='hover:text-linear-mid'>Become Partners</li>
+            <li className='link-hover'>Tokens</li>
+            <li className='link-hover'>API</li>
+            <li className='link-hover'>Big Bounty</li>
+            <li className='link-hover'>Become Partners</li>
           </ul>
         </div>
 

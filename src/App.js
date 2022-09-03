@@ -30,12 +30,12 @@ function App() {
   
   return (
     <div>
-      {window.innerWidth<1000?(<h3 className='w-screen h-screen flex justify-center items-center text-lg text-center p-4'>Sorry Page Is Unresponsive yet. Check the PAge again On A Bigger Screen</h3>)
+      {window.innerWidth<1000?(<h3 className='w-screen h-screen flex justify-center items-center text-lg text-center p-4'>Sorry, Page Is Unresponsive yet. View Page On A More Larger Screen</h3>)
       :
-      <div className='bg-dark-bg w-full text-white overflow-x-hidden max-w-[1600px] mx-auto'>
+      <div className='bg-dark-bg w-full text-white overflow-x-hidden max-w-[1600px] mx-auto relative'>
         <Header/>
         <Discover/>
-          <div className='w-[90%] mx-auto my-24 flex items-center relative'>
+          <div className='w-[90%] mx-auto my-14 flex items-center relative'>
             <button className="prev absolute">Prev</button>
             <img src={Banner} alt="team-slider" className='w-full'/>
             <button className="next absolute left-[97%]">NExt</button>

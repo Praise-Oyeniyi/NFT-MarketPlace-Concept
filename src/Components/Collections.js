@@ -1,12 +1,13 @@
 import React from 'react'
 import Button from './Button';
 import Wallet from '../Images/wallet.svg';
+import Sale from '../Images/sale.svg';
 import Upload from '../Images/upload.svg';
 import { CollectionData } from '../CollectionData/Collection';
 
 const Collections = ({allCollect, select, selected, gallery, selectedCollect, styleActivePlanet}) => {
   return (
-    <div>
+    <div className="w-full relative bg-topp h-auto z-50 pointer-events-auto">
         <section className='w-[90%] mx-auto space-y-10'>
             <h3 className='text-4xl extra text-center font-semibold tracking-wider bg-clip-text bg-gradient-to-r from-linear-left via-linear-mid to-linear-right '>Top Collections</h3>
           
@@ -87,7 +88,7 @@ const Collections = ({allCollect, select, selected, gallery, selectedCollect, st
                   </div>
 
                   <div className='text-center space-y-5 w-[30%]'>
-                    <img src={Upload} alt="list-icon" className='w-full h-14 flex justify-center items-center'/>
+                    <img src={Sale} alt="list-icon" className='w-full h-14 flex justify-center items-center'/>
                     <h4 className='text-lg font-semibold'>
                       Set Up Your Wallet
                     </h4>

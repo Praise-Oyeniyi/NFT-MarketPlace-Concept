@@ -7,10 +7,36 @@
     margin: 0;
 }
 header{
-    background-image: url('../src/Images/headerApe.png'), url('./Images/bottom.png') ;
+    background-image: url('../src/Images/headerApe.png'), url('./Images/Mask.png') ;
     background-repeat: no-repeat;
-    background-position: bottom right, bottom center;
-    background-size:60% 75%, 100% 40%;
+    background-position: bottom right, bottom left;
+    background-size:60% 75%, 100% 80%;
+}
+.mask{
+    background:url('./Images/Mask02.png') no-repeat;
+    background-position: bottom left;
+    background-size:100%;
+}
+.bg-topp::after, .box-after::after{
+    content: '';
+    left: 0;
+    position: absolute;
+    background-size:100%;
+    background-position: top left;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+.bg-topp::after{
+    top: -18%;
+    background: url('./Images/Masks.svg') no-repeat;
+}
+.box-after::after{
+    background: url('./Images/MaskF.png') no-repeat;
+    opacity: .5;
+    top: -60%;
+    z-index: 999999999999999;
 }
 h4, h5, h6, p{
     font-family:'Poppins'
@@ -30,4 +56,8 @@ h1, h2, h3{
 }
 .gall-box{
     box-shadow:  4px 5px rgba(0, 7, 72, 0.041);
+}
+.link-hover:hover{
+    color: #EACCF8;
+    transition: .5s ease;
 }
