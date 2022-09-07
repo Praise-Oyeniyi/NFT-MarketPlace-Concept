@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './Button'
 import Logo from '../Images/logo.png'
+import { motion } from "framer-motion"
 
 const Header = () => {
   return (
@@ -29,18 +30,30 @@ const Header = () => {
             <main className='header-text w-3/6 space-y-5 mt-[4%]'>
 
               <section className='space-y-5'>
-                <h2 className='text-6xl font-medium'>
+                <motion.h2
+                  initial={{y:"-100%", x:"-100%",}} animate={{y:0, x:0,}} transition={{duration:1, type:'ease', delay:.5}} 
+                  className='text-6xl font-medium'>
+                  
                   Discover <br/>Collect, & Sell 
                   <span className='extra font-bold tracking-wider bg-clip-text bg-gradient-to-r from-linear-left via-linear-mid to-linear-right '> Extraordinary </span><br/>
                   NFTs
-                </h2>
-                <p className='w-4/6 text-base'>
-                  The leading NFT Marketplace on Ethereum Home to the next generation of digital creators.
-                </p>
-                <Button Text={'Explore'} Class={'bg-button px-7'}/>
+                </motion.h2>
+                <motion.div 
+                  initial={{y:"100%", x:"-100%",}} animate={{y:0, x:0,}} transition={{duration:1, type:'ease', delay:.5}}
+                  className='call-to-action w-full space-y-5'>
+                  
+                  <p className='w-4/6 text-base'>
+                    The leading NFT Marketplace on Ethereum Home to the next generation of digital creators.
+                  </p>
+
+                  <Button Text={'Explore'} Class={'bg-button px-7'}/>
+                </motion.div>
+
               </section>
               
-              <section className='w-3/6 flex justify-between items-center pt-8'>
+              <motion.section 
+              initial={{y:'100%',}} animate={{y:0,}} transition={{duration:.6, type:'ease', delay:.3}}
+              className='w-3/6 flex justify-between items-center pt-8'>
                 <div className='block text-center'>
                   <h3 className='text-2xl font-medium'>
                     432K+
@@ -61,7 +74,7 @@ const Header = () => {
                   </h3>
                   <h6 className='text-xs text-center'>Community</h6>
                 </div>
-              </section>
+              </motion.section>
 
             </main>
           </div>

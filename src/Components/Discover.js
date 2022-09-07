@@ -1,5 +1,4 @@
 import React from 'react'
-import Ape from '../Images/Ape1.png';
 import Box from '../Images/image5.png'
 import Crypto from '../Images/crypto.png'
 import Button from '../Components/Button';
@@ -11,8 +10,8 @@ const Discover = () => {
   return (
     <div className='mask discover-outer w-full mt-24 pb-16 mb-8'>
           <div className="dis-inner w-[90%] flex justify-between items-start mx-auto space-x-24 px-16">
-            <div className='w-[35%] border border-button flex flex-col justify-center items-center space-y-5 pb-8'>
-              <img src={Ape} alt="ape" className='w-[25em]' />
+            <div className='animate-border w-[35%] border hover:border-button flex flex-col justify-center items-center space-y-5 pb-8'>
+              <div className="animate-image h-[25em] w-5/6 mx-auto bg-[url('./Images/Ape1.png')]"></div>
 
               <div className='w-4/6 flex items-center justify-between bg-ape-desc'>
                 <img src={Box} alt="" className='h-10'/>

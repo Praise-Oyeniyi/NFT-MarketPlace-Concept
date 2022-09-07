@@ -10,8 +10,14 @@
 header{
     background-image: url('../src/Images/headerApe.png'), url('./Images/Mask.png') ;
     background-repeat: no-repeat;
-    background-position: bottom right, bottom left;
+    background-position-y: 1000px, bottom;
+    background-position-x:right,left ;
     background-size:60% 75%, 100% 80%;
+    animation: bg-head 1s ease-in-out .5s 1 forwards;
+}
+@keyframes bg-head {
+    0%   {background-position-y:1000px,bottom;opacity: 0;}
+    100%{background-position-y:bottom;opacity: 1;}
 }
 .mask{
     background:url('./Images/Mask02.png') no-repeat;
@@ -50,7 +56,6 @@ h1, h2, h3{
 }
 .bd-color{
     border-color: transparent;
-    /* color:#ffffff26; */
 }
 .outer-border{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
@@ -74,6 +79,28 @@ h1, h2, h3{
     left: -5%;
 }
 
+@keyframes bg-change {
+    0%   {background-image:url('./Images/Ape1.png');}
+    20%  {background-image:url('./Images/HAPE4-02.png');}
+    40%  {background-image:url('./Images/HAPE4-03.png');}
+    60%  {background-image:url('./Images/HAPE4-04.png');}
+    80% {background-image:url('./Images/HAPE4-05.png');}
+    100% {background-image:url('./Images/HAPE4-06.png');}
+}
 
-
-
+.animate-image{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    animation: bg-change 15s ease-in-out 5s infinite alternate;
+}
+.animate-image:hover{
+    animation-play-state: paused;
+}
+.animate-image:focus{
+    animation-play-state: paused;
+}
+.animate-border{
+    border-color: #1a219eb4;
+    transition: .5s ease;
+}
