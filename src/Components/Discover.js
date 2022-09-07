@@ -9,7 +9,7 @@ import TW from '../Images/TransferWise.png';
 
 const Discover = () => {
   return (
-    <div className='mask discover-outer w-full mt-24 pb-16'>
+    <div className='mask discover-outer w-full mt-24 pb-16 mb-8'>
           <div className="dis-inner w-[90%] flex justify-between items-start mx-auto space-x-24 px-16">
             <div className='w-[35%] border border-button flex flex-col justify-center items-center space-y-5 pb-8'>
               <img src={Ape} alt="ape" className='w-[25em]' />

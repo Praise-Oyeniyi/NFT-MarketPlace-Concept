@@ -10,7 +10,8 @@ import Cool from '../Images/cool.png'
 
 
 export const CollectionData = [
-    {
+    {   
+        "id":1,
         "display":Cool,
         "name":'COOLGUYZZ',
         "collectorName": 'Coolguyzz.io',
@@ -19,7 +20,8 @@ export const CollectionData = [
         "rfloorprice":'-12.45%,',
         "type": 'art',
     },
-    {
+    {   
+        "id":2,
         "display":Gang,
         "name":'gangstaboi v.1',
         "collectorName": 'GB_Gangs',
@@ -29,6 +31,7 @@ export const CollectionData = [
         "type": 'collectibles'
     },
     {
+        "id":3,
         "display":Hyper,
         "name":'HyperApe',
         "collectorName": 'HyperApe.co',
@@ -38,6 +41,7 @@ export const CollectionData = [
         "type": 'metaverse',
     },
     {
+        "id":4,
         "display":Lyod,
         "name":'Lyodd$1',
         "collectorName": 'Naami Po',
@@ -47,6 +51,7 @@ export const CollectionData = [
         "type": 'virtual words',
     },
     {
+        "id":5,
         "display":Azuk,
         "name":'Azuki 3D',
         "collectorName": 'AZUKIJP',
@@ -55,7 +60,8 @@ export const CollectionData = [
         "rfloorprice":'+1.6%,',
         "type": 'music',
     },
-    {
+    {   
+        "id":6,
         "display":Cute,
         "name":'CuteApe White',
         "collectorName":'CuteApe_99',
@@ -65,6 +71,7 @@ export const CollectionData = [
         "type": 'art',
     },
     {
+        "id":7,
         "display":Sneak,
         "name":'SneakerHead Vol.1',
         "collectorName": 'SneakerHead.Corp',
@@ -74,6 +81,7 @@ export const CollectionData = [
         "type": 'metaverse',        
     },
     {
+        "id":8,
         "display":Bear,
         "name":'cvltB3AR',
         "collectorName": 'CVLTBEAR',

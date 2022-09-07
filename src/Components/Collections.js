@@ -7,8 +7,8 @@ import { CollectionData } from '../CollectionData/Collection';
 
 const Collections = ({allCollect, select, selected, gallery, selectedCollect, styleActivePlanet}) => {
   return (
-    <div className="w-full relative bg-topp h-auto z-50 pointer-events-auto">
-        <section className='w-[90%] mx-auto space-y-10'>
+    <div className="w-full relative bg-topp h-auto z-50 pointer-events-auto mb-24">
+        <section className='w-[90%] mx-auto space-y-8'>
             <h3 className='text-4xl extra text-center font-semibold tracking-wider bg-clip-text bg-gradient-to-r from-linear-left via-linear-mid to-linear-right '>Top Collections</h3>
           
             <div className='w-full text-center space-y-10'>
@@ -19,7 +19,7 @@ const Collections = ({allCollect, select, selected, gallery, selectedCollect, st
                 ))}
               </div>
 
-              <div className={`gallery w-full flex ${allCollect.length<3?'justify-center':'justify-around'} items-center gap-8 flex-wrap`}>
+              <div className={`gallery w-full flex ${allCollect.length<3?'justify-start':'justify-around'} items-center gap-8 flex-wrap`}>
                 {allCollect.map((e, pos)=>(
                   <div key={pos} className='gall-box w-[23%] flex flex-col justify-center items-center space-y-3 rounded-xl border-lwhite border p-3 bg-gradient-to-br from-[#ffffff0a] to-[#ffffff26]'>
                     <img src={e.display} alt="gallery-display" className='rounded-xl w-full' />
