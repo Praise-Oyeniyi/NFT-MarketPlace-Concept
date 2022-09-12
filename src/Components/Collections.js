@@ -12,7 +12,7 @@ const Collections = ({allCollect, select, selected, gallery, selectedCollect, st
             <h3 className='text-4xl extra text-center font-semibold tracking-wider bg-clip-text bg-gradient-to-r from-linear-left via-linear-mid to-linear-right sm:text-3xl'>Top Collections</h3>
           
             <div className='w-full text-center space-y-10'>
-              <div className="buttons w-5/6 mx-auto flex justify-evenly items-center small:overflow-scroll small:space-x-5 sm:w-full sm:pl-[22em]">
+              <div className="buttons w-5/6 mx-auto flex justify-evenly items-center small:overflow-scroll small:space-x-5 sm:w-full sm:pl-[22em] pr-5">
                 {select.objects.map((element, pos)=>(
                       <Button Class={`px-8 capitalize py-2 font-semibold border-lwhite border hover:bg-button hover:border-button duration-150 ease-linear ${styleActivePlanet(pos)}`}  
                       key={pos} onClick={()=>{selected({...select, activeState: pos}); gallery(element.type)}} Text={element.type} />
