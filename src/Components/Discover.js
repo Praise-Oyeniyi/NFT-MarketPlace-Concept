@@ -42,7 +42,7 @@ const Discover = () => {
 
             </div>
 
-            <section className='w-3/6 pt-20 space-y-14 sm:w-5/6 sm:!mx-auto sm:text-center'>
+            <section className='w-3/6 pt-20 space-y-14 sm:w-full sm:!mx-auto sm:text-center'>
               <div className='space-y-5'>
                 <h2 className='text-6xl font-medium md:text-5xl sm:text-4xl'>
                   Discover<br/>

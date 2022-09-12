@@ -8,18 +8,18 @@ import { CollectionData } from '../CollectionData/Collection';
 const Collections = ({allCollect, select, selected, gallery, selectedCollect, styleActivePlanet}) => {
   return (
     <div className="w-full relative bg-topp h-auto z-50 pointer-events-auto mb-24">
-        <section className='w-[90%] mx-auto space-y-8'>
+        <section className='w-[90%] mx-auto space-y-8 sm:space-y-5'>
             <h3 className='text-4xl extra text-center font-semibold tracking-wider bg-clip-text bg-gradient-to-r from-linear-left via-linear-mid to-linear-right sm:text-3xl'>Top Collections</h3>
           
             <div className='w-full text-center space-y-10'>
-              <div className="buttons w-5/6 mx-auto flex justify-evenly items-center small:overflow-scroll small:space-x-5 sm:w-full sm:pl-[20em]">
+              <div className="buttons w-5/6 mx-auto flex justify-evenly items-center small:overflow-scroll small:space-x-5 sm:w-full sm:pl-[22em]">
                 {select.objects.map((element, pos)=>(
                       <Button Class={`px-8 capitalize py-2 font-semibold border-lwhite border hover:bg-button hover:border-button duration-150 ease-linear ${styleActivePlanet(pos)}`}  
                       key={pos} onClick={()=>{selected({...select, activeState: pos}); gallery(element.type)}} Text={element.type} />
                 ))}
               </div>
 
-              <div className={`gallery w-full flex ${allCollect.length<3?'justify-start':'justify-around'} items-center gap-y-8 sm:gap-x-1 flex-wrap`}>
+              <div className={`gallery w-full flex ${allCollect.length<3?'justify-start':'justify-around'} items-center gap-y-8 sm:gap-x-1 flex-wrap sm:items-baseline`}>
                 {allCollect.map((e, pos)=>(
                   <div key={pos} className='gall-box w-[23%] sm:w-[48%] flex flex-col justify-center items-center space-y-3 rounded-xl border-lwhite border p-3 bg-gradient-to-br from-[#ffffff0a] to-[#ffffff26]'>
                     <img src={e.display} alt="gallery-display" className='rounded-xl w-full' />

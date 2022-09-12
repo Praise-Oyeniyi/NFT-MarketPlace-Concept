@@ -42,7 +42,7 @@ const Header = () => {
                   initial={{y:"100%", x:"-100%",}} animate={{y:0, x:0,}} transition={{duration:1, type:'ease', delay:.5}}
                   className='call-to-action w-full space-y-5'>
                   
-                  <p className='w-4/6 text-base small:w-full sm:px-5'>
+                  <p className='w-4/6 text-base small:w-full '>
                     The leading NFT Marketplace on Ethereum Home to the next generation of digital creators.
                   </p>
 
