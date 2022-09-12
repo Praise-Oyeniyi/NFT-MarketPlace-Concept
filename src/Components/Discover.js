@@ -9,9 +9,9 @@ import TW from '../Images/TransferWise.png';
 const Discover = () => {
   return (
     <div className='mask discover-outer w-full mt-24 pb-16 mb-8'>
-          <div className="dis-inner w-[90%] flex justify-between items-start mx-auto space-x-24 px-16 small:px-0 small:space-x-5 sm:flex-col">
-            <div className='animate-border w-[35%] border hover:border-button flex flex-col justify-center items-center space-y-5 pb-8 sm:w-5/6 md:w-3/6 sm:mx-auto'>
-              <div className="animate-image h-[25em] w-5/6 mx-auto bg-[url('./Images/Ape1.png')]"></div>
+          <div className="dis-inner w-[90%] flex justify-between items-start mx-auto space-x-24 px-16 small:px-0 md:space-x-5 sm:flex-col sm:space-x-0">
+            <div className='animate-border w-[35%] border hover:border-button flex flex-col justify-center items-center space-y-5 pb-8 sm:w-full md:w-3/6 sm:mx-auto'>
+              <div className="animate-image h-[25em] sm:h-[20em] w-5/6 mx-auto bg-[url('./Images/Ape1.png')]"></div>
 
               <div className='w-4/6 flex items-center justify-between bg-ape-desc small:w-5/6'>
                 <img src={Box} alt="" className='h-10'/>
@@ -44,7 +44,7 @@ const Discover = () => {
 
             <section className='w-3/6 pt-20 space-y-14 sm:w-5/6 sm:!mx-auto sm:text-center'>
               <div className='space-y-5'>
-                <h2 className='text-6xl font-medium small:text-5xl'>
+                <h2 className='text-6xl font-medium md:text-5xl sm:text-4xl'>
                   Discover<br/>
                   <span className='extra font-bold tracking-wider bg-clip-text bg-gradient-to-r from-linear-left via-linear-mid to-linear-right '>Trending</span> <br/>
                   Collections
@@ -56,20 +56,20 @@ const Discover = () => {
               </div>
 
 
-              <div className='w-5/6 flex justify-between items-center md:w-full sm:w-5/6 sm:mx-auto'>
+              <div className='w-5/6 flex justify-between items-center md:w-full sm:space-x-5 sm:mx-auto'>
                 <div className='text-center space-y-2 icon-div'>
                   <img src={MM} alt="metamask" className='h-14 sm:h-10'/>
-                  <h4 className='sm:text-sm'>METAMASK</h4>
+                  <h4 className='sm:text-xs'>METAMASK</h4>
                 </div>
 
                 <div className='text-center space-y-2 icon-div'>
                   <img src={BIN} alt="binance" className='h-14 sm:h-10'/>
-                  <h4 className='sm:text-sm'>BINANCE</h4>
+                  <h4 className='sm:text-xs'>BINANCE</h4>
                 </div>
               
                 <div className='text-center space-y-2 icon-div'>
                   <img src={TW} alt="transferwise Logo" className='h-14 sm:h-10'/>
-                  <h4 className='sm:text-sm'>TransferWise</h4>
+                  <h4 className='sm:text-xs'>TransferWise</h4>
                 </div>
               </div>
 

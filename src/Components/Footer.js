@@ -18,17 +18,17 @@ const Footer = () => {
         NFT drops, and tips and tricks 
         </p>
 
-        <form action="#" className='w-3/6 bg-lwhite mx-auto relative flex rounded-xl p-1 h-12 small:w-5/6'>
-        <input type="email" name="Email" id="email" placeholder='Your Email' className='pl-6 h-full bg-[rgba(255,255,255,0%)] border-none outline-none w-5/6 placeholder:text-lwhite placeholder:text-sm' required/>
-        <Button Text={"I'm in"} Class={'px-6 bg-button w-1/6 form-btn'}/>
+        <form action="#" className='w-3/6 bg-lwhite mx-auto relative flex rounded-xl p-1 h-12 small:w-5/6 items-center'>
+            <input type="email" name="Email" id="email" placeholder='Your Email' className='pl-6 h-full bg-[rgba(255,255,255,0%)] border-none outline-none w-5/6 placeholder:text-lwhite placeholder:text-sm' required/>
+            <Button Text={"I'm in"} Class={'px-6 bg-button w-1/6 form-btn sm:!w-2/6'}/>
         </form>
 
 
         <div className='w-full p-4 text-left'>
 
-            <div className='w-full mx-auto border-t border-lwhite flex justify-evenly items-baseline px-24 space-x-8 py-4 small:px-5 small:items-start sm:flex-col sm:space-y-10 sm:space-x-0'>
+            <div className='w-full mx-auto border-t border-lwhite flex justify-evenly items-baseline px-24 space-x-8 py-4 small:px-5 small:items-start sm:flex-col sm:space-y-8 sm:space-x-0'>
 
-                <div className='w-auto space-y-5 md:w-3/6 sm:w-full'>
+                <div className='w-auto space-y-5 md:w-3/6 sm:w-full sm:space-y-3'>
                     <div className="logo-area flex justify-start items-center sm:justify-center">
                         <img src={Logo} alt="Logo" className='h-14'/>
                         <h3 className='Sitename text-2xl font-semibold tracking-wider hover:text-linear-mid'>EMC<span className=' line-through'>2</span></h3>
@@ -46,8 +46,8 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='w-2/6 space-y-5 sm:w-full sm:mx-auto sm:text-center'>
-                    <h3 className='text-2xl font-medium tracking-wide small:pt-4'>MarketPlace</h3>
+                <div className='w-2/6 space-y-5 sm:w-full sm:mx-auto sm:text-center sm:space-y-3'>
+                    <h3 className='text-2xl font-medium tracking-wide md:pt-4'>MarketPlace</h3>
                     <ul className='footer-links space-y-3 text'>
                         <li className='link-hover'>Explore</li>
                         <li className='link-hover'>Articles</li>
@@ -56,15 +56,15 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div className='w-2/6 space-y-5 sm:w-full sm:mx-auto sm:text-center '>
-                    <h3 className='text-2xl font-medium tracking-wide small:pt-4'>Links</h3>
+                <div className='w-2/6 space-y-5 sm:w-full sm:mx-auto sm:text-center sm:space-y-3'>
+                    <h3 className='text-2xl font-medium tracking-wide md:pt-4'>Links</h3>
                     <ul className='footer-links space-y-3 text-lg'>
                         <li className='link-hover'>Tokens</li>
                         <li className='link-hover'>API</li>
                         <li className='link-hover'>Big Bounty</li>
                         <li className='link-hover'>Become Partners</li>
                     </ul>
-                    <div className="w-5/6 icons flex space-x-5 pt-2 2xl:hidden sm:w-full sm:justify-center sm:items-center">
+                    <div className="w-5/6 icons flex space-x-5 pt-2 xl:hidden sm:w-full sm:justify-center sm:items-center">
                         <img src={Instagram} alt="social icons" className='h-10 w-10 p-2 border border-lwhite hover:border-button'/>
                         <img src={Twitter} alt="social icons" className='h-10 w-10 p-2 border border-lwhite hover:border-button'/>
                         <img src={Facebook} alt="social icons" className='h-10 w-10 p-2 border border-lwhite hover:border-button'/>

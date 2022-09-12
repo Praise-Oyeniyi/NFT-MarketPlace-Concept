@@ -32,14 +32,12 @@ function App() {
 
 
   return (
-    <div>
-      <div className='bg-dark-bg w-full text-white overflow-x-hidden max-w-[1600px] mx-auto relative'>
-        <Header/>
-        <Discover/>
-        <Slider/>
-        <Collections allCollect={allCollect} select={select} selected={selected} gallery={gallery} selectedCollect={selectedCollect} styleActivePlanet={styleActivePlanet}/>
-        <Footer/>
-      </div>
+    <div className='bg-dark-bg text-white overflow-x-hidden max-w-[1600px] mx-auto relative'>
+      <Header/>
+      <Discover/>
+      <Slider/>
+      <Collections allCollect={allCollect} select={select} selected={selected} gallery={gallery} selectedCollect={selectedCollect} styleActivePlanet={styleActivePlanet}/>
+      <Footer/>
     </div>
   );
 }

@@ -5,8 +5,8 @@ import { motion } from "framer-motion"
 
 const Header = () => {
   return (
-    <header className='header-container h-screen w-screen]'>
-          <div className="header w-5/6 h-full mx-auto ">
+    <header className='header-container h-screen w-screen'>
+          <div className="header w-5/6 h-full mx-auto sm:w-[90%]">
 
             <nav className='w-full flex justify-between h-20 items-center'>
               <div className="logo-area flex justify-center items-center">
@@ -32,7 +32,7 @@ const Header = () => {
               <section className='space-y-5 small:text-center'>
                 <motion.h2
                   initial={{y:"-100%", x:"-100%",}} animate={{y:0, x:0,}} transition={{duration:1, type:'ease', delay:.5}} 
-                  className='text-6xl font-medium small:text-5xl'>
+                  className='text-6xl font-medium md:text-5xl sm:text-4xl'>
                   
                   Discover <br/>Collect, & Sell 
                   <span className='extra font-bold tracking-wider bg-clip-text bg-gradient-to-r from-linear-left via-linear-mid to-linear-right '> Extraordinary </span><br/>
@@ -42,7 +42,7 @@ const Header = () => {
                   initial={{y:"100%", x:"-100%",}} animate={{y:0, x:0,}} transition={{duration:1, type:'ease', delay:.5}}
                   className='call-to-action w-full space-y-5'>
                   
-                  <p className='w-4/6 text-base small:w-full'>
+                  <p className='w-4/6 text-base small:w-full sm:px-5'>
                     The leading NFT Marketplace on Ethereum Home to the next generation of digital creators.
                   </p>
 
@@ -53,7 +53,7 @@ const Header = () => {
               
               <motion.section 
               initial={{y:'100%',opacity:0}} animate={{y:0,opacity:1}} transition={{duration:.6, type:'ease', delay:.3}}
-              className='w-3/6 flex justify-between items-center pt-8 small:mx-auto small:w-4/6'>
+              className='w-3/6 flex justify-between items-center pt-8 small:mx-auto md:w-4/6 sm:w-5/6 sm:pt-2'>
                 <div className='block text-center'>
                   <h3 className='text-2xl font-medium'>
                     432K+
