@@ -44,10 +44,10 @@ header{
     z-index: 999999999999999;
 }
 h4, h5, h6, p{
-    font-family:'Poppins'
+    font-family:'Poppins'!important;
 }
 h1, h2, h3{
-    font-family: 'Clash Display', sans-serif;;
+font-family: 'Clash Display', sans-serif !important;
 }
 .extra{
     color:transparent;
