@@ -32,12 +32,18 @@ function App() {
 
 
   return (
-    <div className='bg-dark-bg text-white overflow-x-hidden max-w-[1600px] mx-auto relative'>
-      <Header/>
-      <Discover/>
-      <Slider/>
-      <Collections allCollect={allCollect} select={select} selected={selected} gallery={gallery} selectedCollect={selectedCollect} styleActivePlanet={styleActivePlanet}/>
-      <Footer/>
+    <div>
+      {window.innerWidth<500?(<h3 className='w-screen h-screen flex justify-center items-center text-lg text-center p-4'>Sorry, Page Is Unresponsive yet. View Page On A More Larger Screen</h3>)
+      :
+      <div className='bg-dark-bg w-full text-white overflow-x-hidden max-w-[1600px] mx-auto relative'>
+        <Header/>
+        <Discover/>
+        <Slider/>
+        <Collections allCollect={allCollect} select={select} selected={selected} gallery={gallery} selectedCollect={selectedCollect} styleActivePlanet={styleActivePlanet}/>
+        <Footer/>
+
+      </div>
+}
     </div>
   );
 }
