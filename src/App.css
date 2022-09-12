@@ -104,3 +104,25 @@ h1, h2, h3{
     border-color: #1a219eb4;
     transition: .5s ease;
 }
+.icon-div{
+    display:flex ;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+@media(max-width:1000px) {
+    header{
+        background-size:69% 60%, 100% 60%;
+    }
+    .form-btn{
+        width:25%;
+    }
+}
+@media(max-width:750px) {
+    header{
+        background-size:85% 35%, 100% 50%;
+    }
+    .form-btn{
+        width:25%;
+    }
+}

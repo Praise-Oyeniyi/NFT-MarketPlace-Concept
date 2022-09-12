@@ -12,16 +12,16 @@ const Collections = ({allCollect, select, selected, gallery, selectedCollect, st
             <h3 className='text-4xl extra text-center font-semibold tracking-wider bg-clip-text bg-gradient-to-r from-linear-left via-linear-mid to-linear-right '>Top Collections</h3>
           
             <div className='w-full text-center space-y-10'>
-              <div className="buttons w-5/6 mx-auto flex justify-evenly items-center">
+              <div className="buttons w-5/6 mx-auto flex justify-evenly items-center small:overflow-scroll small:space-x-5">
                 {select.objects.map((element, pos)=>(
                       <Button Class={`px-8 capitalize py-2 font-semibold border-lwhite border hover:bg-button hover:border-button duration-150 ease-linear ${styleActivePlanet(pos)}`}  
                       key={pos} onClick={()=>{selected({...select, activeState: pos}); gallery(element.type)}} Text={element.type} />
                 ))}
               </div>
 
-              <div className={`gallery w-full flex ${allCollect.length<3?'justify-start':'justify-around'} items-center gap-8 flex-wrap`}>
+              <div className={`gallery w-full flex ${allCollect.length<3?'justify-start':'justify-around'} items-center gap-y-8 sm:gap-x-1 flex-wrap`}>
                 {allCollect.map((e, pos)=>(
-                  <div key={pos} className='gall-box w-[23%] flex flex-col justify-center items-center space-y-3 rounded-xl border-lwhite border p-3 bg-gradient-to-br from-[#ffffff0a] to-[#ffffff26]'>
+                  <div key={pos} className='gall-box w-[23%] sm:w-[48%] flex flex-col justify-center items-center space-y-3 rounded-xl border-lwhite border p-3 bg-gradient-to-br from-[#ffffff0a] to-[#ffffff26]'>
                     <img src={e.display} alt="gallery-display" className='rounded-xl w-full' />
 
                     <div className='w-full space-y-4'>
@@ -63,36 +63,36 @@ const Collections = ({allCollect, select, selected, gallery, selectedCollect, st
                 
                 <h3 className='text-3xl extra text-center font-semibold tracking-tight bg-clip-text bg-gradient-to-r from-linear-left via-linear-mid to-linear-right '>Create And Sell Your NFTs</h3>
 
-                <div className='flex w-full justify-evenly items-center border-y-white rounded-xl space-x-5'>
+                <div className='flex w-full justify-evenly items-center border-y-white rounded-xl space-x-5 small:space-x-2 small:items-stretch sm:flex-col sm:space-y-14 '>
 
-                  <div className='text-center space-y-5 w-[30%]'>
+                  <div className='text-center space-y-5 w-[30%] md:w-3/6 sm:w-full'>
                     <img src={Wallet} alt="wallet-icon" className='w-full h-14 flex justify-center items-center'/>
                     <h4 className='text-lg font-semibold'>
                       Set Up Your Wallet
                     </h4>
-                    <p className='text-sm text-center px-8'>
+                    <p className='text-sm text-center px-8 md:px-0'>
                       Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the wallet icon 
                       in the top right corner. Learn about the wallets we support.
                     </p>
                   </div>
 
-                  <div className='text-center space-y-5 w-[30%]'>
+                  <div className='text-center space-y-5 w-[30%] md:w-3/6 sm:w-full'>
                     <img src={Upload} alt="upload icon" className='w-full h-14 flex justify-center items-center'/>
                     <h4 className='text-lg font-semibold'>
                       Upload & Collect Collection
                     </h4>
-                    <p className='text-sm px-8'>
+                    <p className='text-sm px-8 md:px-0'>
                       Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the wallet icon 
                       in the top right corner. Learn about the wallets we support.
                     </p>
                   </div>
 
-                  <div className='text-center space-y-5 w-[30%]'>
+                  <div className='text-center space-y-5 w-[30%] md:w-3/6 sm:w-full'>
                     <img src={Sale} alt="list-icon" className='w-full h-14 flex justify-center items-center'/>
                     <h4 className='text-lg font-semibold'>
                       Set Up Your Wallet
                     </h4>
-                    <p className='text-sm px-8'>
+                    <p className='text-sm px-8 md:px-0'>
                       Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the wallet icon 
                       in the top right corner. Learn about the wallets we support.
                     </p>
