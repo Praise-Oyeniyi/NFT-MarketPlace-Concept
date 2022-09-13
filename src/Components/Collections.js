@@ -26,7 +26,7 @@ const Collections = ({allCollect, select, selected, gallery, selectedCollect, st
 
                     <div className='w-full space-y-4'>
                       <div className='block text-left space-y-1'>
-                        <h3 className='text-base font-semibold tracking-wide'>{e.name}</h3>
+                        <h3 className='text-base font-semibold tracking-wide sm:text-sm'>{e.name}</h3>
                         <h6 className='text-[0.6rem]'>{e.collectorName}</h6>
                       </div>
 
@@ -70,7 +70,7 @@ const Collections = ({allCollect, select, selected, gallery, selectedCollect, st
                     <h4 className='text-lg font-semibold'>
                       Set Up Your Wallet
                     </h4>
-                    <p className='text-sm text-center px-8 md:px-0'>
+                    <p className='text-sm text-center px-8 md:px-0 sm:!mt-[5px]'>
                       Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the wallet icon 
                       in the top right corner. Learn about the wallets we support.
                     </p>
@@ -81,7 +81,7 @@ const Collections = ({allCollect, select, selected, gallery, selectedCollect, st
                     <h4 className='text-lg font-semibold'>
                       Upload & Collect Collection
                     </h4>
-                    <p className='text-sm px-8 md:px-0'>
+                    <p className='text-sm px-8 md:px-0 sm:!mt-[5px]'>
                       Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the wallet icon 
                       in the top right corner. Learn about the wallets we support.
                     </p>
@@ -92,7 +92,7 @@ const Collections = ({allCollect, select, selected, gallery, selectedCollect, st
                     <h4 className='text-lg font-semibold'>
                       Set Up Your Wallet
                     </h4>
-                    <p className='text-sm px-8 md:px-0'>
+                    <p className='text-sm px-8 md:px-0 sm:!mt-[5px]'>
                       Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the wallet icon 
                       in the top right corner. Learn about the wallets we support.
                     </p>
