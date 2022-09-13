@@ -44,10 +44,10 @@ header{
     z-index: 999999999999999;
 }
 h4, h5, h6, p{
-    font-family:'Poppins'!important;
+    font-family:'Poppins' cochin ;
 }
 h1, h2, h3{
-font-family: 'Clash Display', sans-serif !important;
+font-family: 'Clash Display', 'Times New Roman';
 }
 .extra{
     color:transparent;

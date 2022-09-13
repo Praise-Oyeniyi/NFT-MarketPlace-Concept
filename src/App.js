@@ -1,11 +1,14 @@
 import './App.css';
 import { CollectionData } from './CollectionData/Collection';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
+import Logo from './Images/logo.svg'
 import Footer from './Components/Footer';
 import Collections from './Components/Collections';
 import Header from './Components/Header';
 import Discover from './Components/Discover';
 import Slider from './Components/Slider';
+import Loader from './Loader';
 
 
 function App() {
@@ -28,23 +31,50 @@ function App() {
       const filtered = CollectionData.filter(e => e.type === artType);
       selectedCollect(filtered);
   }
+  
+  const [loading, setLoading] = useState(true);
 
+  const container = {
+    show: {
+      transition: {
+        staggerChildren: 0.35,
+      },
+    },
+  };
+  
+  const item = {
+    hidden: { opacity: 0, y: 200, rotate:90, },
+    show: {
+      opacity: 1,
+      y: 0,
+      rotate:180,
+      transition: {
+        ease: [0.6, 0.01, -0.05, 0.95],
+        duration: 2,
+      },
+    },
+    exit:{
+      rotate:360,
+    }
+  };
 
 
   return (
-    <div>
-      {window.innerWidth<500?(<h3 className='w-screen h-screen flex justify-center items-center text-lg text-center p-4'>Sorry, Page Is Unresponsive yet. View Page On A More Larger Screen</h3>)
-      :
-      <div className='bg-dark-bg w-full text-white overflow-x-hidden max-w-[1600px] mx-auto relative'>
-        <Header/>
-        <Discover/>
-        <Slider/>
-        <Collections allCollect={allCollect} select={select} selected={selected} gallery={gallery} selectedCollect={selectedCollect} styleActivePlanet={styleActivePlanet}/>
-        <Footer/>
-
-      </div>
-}
-    </div>
+    <AnimateSharedLayout type="crossfade">
+      <AnimatePresence>
+        {loading?
+        <Loader loading={loading} setLoading={setLoading} container={container} item={item} Logo={Logo}/>
+        :
+        (<div
+          className='bg-dark-bg w-full text-white overflow-x-hidden max-w-[1600px] mx-auto relative'>
+          <Header Logo={Logo}/>
+          <Discover/>
+          <Slider/>
+          <Collections allCollect={allCollect} select={select} selected={selected} gallery={gallery} selectedCollect={selectedCollect} styleActivePlanet={styleActivePlanet}/>
+          <Footer/>
+        </div>)}
+      </AnimatePresence>
+    </AnimateSharedLayout>
   );
 }
 

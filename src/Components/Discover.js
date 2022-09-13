@@ -24,17 +24,17 @@ const Discover = () => {
 
               <div className='w-4/6 flex justify-between items-center bg-ape-desc h-12 small:w-5/6'>
                 <div>
-                  <h3 className='text-sm pb-1 tracking-wider'>15.8 ETH</h3>
+                  <h3 className='text-sm pb-1 tracking-wider sm:tracking-wide'>15.8 ETH</h3>
                   <p className='text-[0.7rem]'>latest bid</p>
                 </div>
 
                 <div>
-                  <h3 className='text-sm pb-1 tracking-wider'>9.45 ETH</h3>
+                  <h3 className='text-sm pb-1 tracking-wider sm:tracking-wide'>9.45 ETH</h3>
                   <p className='text-[0.7rem]'>from</p>
                 </div>
 
                 <div>
-                  <h3 className='text-sm pb-1 tracking-wider'>$180, 345</h3>
+                  <h3 className='text-sm pb-1 tracking-wider sm:tracking-wide'>$180, 345</h3>
                   <p className='text-[0.7rem] text-price'>+12.45%</p>
                 </div>
 

@@ -5,7 +5,7 @@ import Facebook from '../Images/facebook.svg';
 import Discord from '../Images/discord.svg';
 import Youtube from '../Images/youtube.svg';
 import Button from './Button'
-import Logo from '../Images/logo.png'
+import Logo from '../Images/logo.svg'
 
 const Footer = () => {
   return (
