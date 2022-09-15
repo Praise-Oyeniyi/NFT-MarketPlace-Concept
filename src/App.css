@@ -23,7 +23,7 @@ header::before{
     left: 0;
     bottom: 0;
     pointer-events: none;
-    background-color: #0505055e;
+    background-color: #05050570;
 }
 @keyframes bg-head {
     0%   {background-position-y:1000px,bottom;opacity: 0;}

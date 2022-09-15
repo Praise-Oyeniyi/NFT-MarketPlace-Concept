@@ -52,7 +52,7 @@ const Header = ({Logo}) => {
               
               <motion.section 
               initial={{y:'100%',opacity:0}} animate={{y:0,opacity:1}} transition={{duration:.6, type:'ease', delay:.3}}
-              className='w-3/6 flex justify-between items-center pt-8 small:mx-auto md:w-4/6 sm:w-5/6 sm:absolute sm:bottom-[10%] sm:left-[50%] sm:!translate-x-[-50%]'>
+              className='w-3/6 flex justify-between items-center pt-8 small:mx-auto md:w-4/6 sm:w-5/6 sm:absolute sm:bottom-[10%] sm:left-[50%] sm:!translate-x-[-50%] sm:justify-around'>
                 <div className='block text-center'>
                   <h3 className='text-2xl font-medium '>
                     432K+
