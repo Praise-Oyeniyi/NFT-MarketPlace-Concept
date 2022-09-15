@@ -9,11 +9,11 @@ import Logo from '../Images/logo.svg'
 
 const Footer = () => {
   return (
-    <footer className='w-full text-center space-y-8 bg-[#ffffff13] py-10 z-50 pointer-events-auto box-after relative'>
+    <footer className='w-full text-center space-y-8 sm:space-y-5 bg-[#ffffff13] py-10 z-50 pointer-events-auto box-after relative'>
             
         <h3 className='text-3xl pb-2 font-medium'>Get More Updates</h3>
 
-        <p className='text-base px-5'>
+        <p className='text-base px-5 sm:text-sm sm:!mt-0'>
         Join our mailing list to stay in the loop with our newest feature releases, 
         NFT drops, and tips and tricks 
         </p>
@@ -33,7 +33,7 @@ const Footer = () => {
                         <img src={Logo} alt="Logo" className='h-14'/>
                         <h3 className='Sitename text-2xl font-semibold tracking-wider hover:text-linear-mid'>EMC<span className=' line-through'>2</span></h3>
                     </div>
-                    <p className='text-base w-4/6 md:w-5/6 sm:w-full sm:text-center'>
+                    <p className='text-base w-4/6 md:w-5/6 sm:w-full sm:text-center sm:text-sm'>
                         The leading NFT Marketplace on Ethereum
                         Home to the next generation of digital creators. Discover the best NFT collections.
                     </p>
@@ -48,7 +48,7 @@ const Footer = () => {
 
                 <div className='w-2/6 space-y-5 sm:w-full sm:mx-auto sm:text-center sm:space-y-3'>
                     <h3 className='text-2xl font-medium tracking-wide md:pt-4'>MarketPlace</h3>
-                    <ul className='footer-links space-y-3 text'>
+                    <ul className='footer-links space-y-3 text-lg sm:text-base'>
                         <li className='link-hover'>Explore</li>
                         <li className='link-hover'>Articles</li>
                         <li className='link-hover'>How It Works</li>
@@ -58,7 +58,7 @@ const Footer = () => {
 
                 <div className='w-2/6 space-y-5 sm:w-full sm:mx-auto sm:text-center sm:space-y-3'>
                     <h3 className='text-2xl font-medium tracking-wide md:pt-4'>Links</h3>
-                    <ul className='footer-links space-y-3 text-lg'>
+                    <ul className='footer-links space-y-3 text-lg sm:text-base'>
                         <li className='link-hover'>Tokens</li>
                         <li className='link-hover'>API</li>
                         <li className='link-hover'>Big Bounty</li>

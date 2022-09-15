@@ -8,7 +8,7 @@ const Header = ({Logo}) => {
           <div className="header w-5/6 h-full mx-auto sm:w-[90%]">
 
             <nav className='w-full flex justify-between h-20 items-center'>
-              <div className="logo-area flex justify-center items-center relative sm:left-[-7%]">
+              <div className="logo-area flex justify-center items-center relative sm:left-[-7%] xl:left-[-3%]">
                 <motion.img src={Logo} alt="Logo" className='h-24 sm:h-20' layoutId='logo-animate'/>
                 <h3 className='Sitename text-2xl font-semibold tracking-wide hover:text-linear-mid relative sm:left-[-8%]'>EMC<span className=' line-through'>2</span></h3>
               </div>
@@ -21,7 +21,7 @@ const Header = ({Logo}) => {
                   <li className='link-hover border-y-2 py-2 border-y-transparent hover:border-y-linear-mid'>Create</li>
                 </ul>
                 
-                <Button Text={'Wallet'} Class={'bg-button px-5'}/>
+                <Button Text={'Wallet'} Class={'bg-button px-5 sm:py-2'}/>
               </div>
             </nav>
 
@@ -52,7 +52,7 @@ const Header = ({Logo}) => {
               
               <motion.section 
               initial={{y:'100%',opacity:0}} animate={{y:0,opacity:1}} transition={{duration:.6, type:'ease', delay:.3}}
-              className='w-3/6 flex justify-between items-center pt-8 small:mx-auto md:w-4/6 sm:w-5/6 relative sm:-bottom-24'>
+              className='w-3/6 flex justify-between items-center pt-8 small:mx-auto md:w-4/6 sm:w-5/6 sm:absolute sm:bottom-[7%] sm:left-[50%] sm:!translate-x-[-50%]'>
                 <div className='block text-center'>
                   <h3 className='text-2xl font-medium '>
                     432K+

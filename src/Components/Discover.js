@@ -49,7 +49,7 @@ const Discover = () => {
                   <span className='extra font-bold tracking-wider bg-clip-text bg-gradient-to-r from-linear-left via-linear-mid to-linear-right '>Trending</span> <br/>
                   Collections
                 </h2>
-                <p className='w-4/6 text-base md:w-5/6 sm:w-full'>
+                <p className='w-4/6 text-base md:w-5/6 sm:w-full sm:text-sm'>
                   The leading NFT Marketplace on Ethereum Home to the next generation of digital creators.
                 </p>
                 <Button Text={'See All'} Class={'bg-button px-8'}/>
