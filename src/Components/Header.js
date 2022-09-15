@@ -21,7 +21,7 @@ const Header = ({Logo}) => {
                   <li className='link-hover border-y-2 py-2 border-y-transparent hover:border-y-linear-mid'>Create</li>
                 </ul>
                 
-                <Button Text={'Wallet'} Class={'bg-button px-5 sm:py-2'}/>
+                <Button Text={'Wallet'} Class={'bg-button px-5 sm:py-2 z-30'}/>
               </div>
             </nav>
 
@@ -52,7 +52,7 @@ const Header = ({Logo}) => {
               
               <motion.section 
               initial={{y:'100%',opacity:0}} animate={{y:0,opacity:1}} transition={{duration:.6, type:'ease', delay:.3}}
-              className='w-3/6 flex justify-between items-center pt-8 small:mx-auto md:w-4/6 sm:w-5/6 sm:absolute sm:bottom-[7%] sm:left-[50%] sm:!translate-x-[-50%]'>
+              className='w-3/6 flex justify-between items-center pt-8 small:mx-auto md:w-4/6 sm:w-5/6 sm:absolute sm:bottom-[10%] sm:left-[50%] sm:!translate-x-[-50%]'>
                 <div className='block text-center'>
                   <h3 className='text-2xl font-medium '>
                     432K+
