@@ -77,7 +77,7 @@ const Footer = () => {
 
 
         </div>
-        <div className="attributes text-center bg-dark-bg text-linear-mid text-sm absolute bottom-0 w-full h-10 flex justify-center items-center">
+        <div className="attributes text-center bg-dark-bg text-linear-mid text-sm absolute bottom-0 w-full h-10 flex justify-center items-center sm:px-4 sm:text-xs">
             <h4>Designed By <a className='text-linear-left hover:!text-linear-right link-hover' href={'https://twitter.com/Olatoba9'}>@Olatoba</a>, coded by <a className='text-linear-left hover:!text-linear-right link-hover' href={'https://twitter.com/praise_oyeniyi'}>Praise_Oyeniyi</a></h4>
         </div>
     </footer>
