@@ -13,7 +13,7 @@ const Header = ({Logo}) => {
                 <h3 className='Sitename text-2xl font-semibold tracking-wide hover:text-linear-mid relative sm:left-[-8%]'>EMC<span className=' line-through'>2</span></h3>
               </div>
 
-              <div className="nav-links w-3/6 flex justify-evenly space-x-5 items-center sm:w-auto">
+              <div className="nav-links w-3/6 flex justify-evenly space-x-5 items-center sm:w-auto z-30">
                 <ul className='w-full flex space-x-5 items-center justify-around text-base font-medium sm:hidden'>
                   <li className='link-hover border-y-2 py-2 border-y-transparent hover:border-y-linear-mid'>Marketplace</li>
                   <li className='link-hover border-y-2 py-2 border-y-transparent hover:border-y-linear-mid'>Collection</li>
@@ -21,7 +21,7 @@ const Header = ({Logo}) => {
                   <li className='link-hover border-y-2 py-2 border-y-transparent hover:border-y-linear-mid'>Create</li>
                 </ul>
                 
-                <Button Text={'Wallet'} Class={'bg-button px-5 sm:py-2 z-30'}/>
+                <Button Text={'Wallet'} Class={'bg-button px-5 sm:py-2'}/>
               </div>
             </nav>
 
