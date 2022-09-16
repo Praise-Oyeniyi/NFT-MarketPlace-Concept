@@ -19,7 +19,7 @@ const Collections = ({allCollect, select, selected, gallery, selectedCollect, st
                 ))}
               </div>
 
-              <div className={`gallery w-full flex ${allCollect.length<3?'justify-start':'justify-around'} items-center gap-y-8 sm:gap-x-1 flex-wrap sm:items-baseline`}>
+              <div className={`gallery w-full flex ${allCollect.length<3?'justify-start gap-x-4':'justify-around'} items-center gap-y-8 sm:gap-x-1 flex-wrap sm:items-baseline`}>
                 {allCollect.map((e, pos)=>(
                   <div key={pos} className='gall-box w-[23%] sm:w-[48%] flex flex-col justify-center items-center space-y-3 rounded-xl border-lwhite border p-3 bg-gradient-to-br from-[#ffffff0a] to-[#ffffff26]'>
                     <img src={e.display} alt="gallery-display" className='rounded-xl w-full' />
