@@ -1,4 +1,4 @@
-
+@import url('http://fonts.cdnfonts.com/css/clash-display');
 *{
     box-sizing: border-box;
     padding: 0;
@@ -59,7 +59,7 @@ h4, h5, h6, p{
     font-family:'Poppins' cochin ;
 }
 h1, h2, h3{
-font-family: 'Clash Display', 'Times New Roman';
+font-family: 'Clash Display', sans-serif;
 }
 .extra{
     color:transparent;
